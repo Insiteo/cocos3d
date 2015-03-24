@@ -88,9 +88,6 @@ Pod::Spec.new do |s|
   #  files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  
-  # Preserve the layout of headers in the Code directory
-  s.header_mappings_dir = "cocos3d"
 
   # s.source_files  = "cocos3d/**/*"
   # s.exclude_files = "Classes/Exclude"
@@ -137,23 +134,23 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
   
   s.subspec 'cc3CAL' do |al|
-    al.source_files = "cc3CAL/**/*"
+    al.source_files = "cocos3d/cc3CAL/**/*"
   end
   
   s.subspec 'cc3Extras' do |ex|
-    ex.source_files = "cc3Extras/**/*"
+    ex.source_files = "cocos3d/cc3Extras/**/*"
   end
   
   s.subspec 'cc3PVR' do |pv|
-    pv.source_files = "cc3PVR/**/*"
+    pv.source_files = "cocos3d/cc3PVR/**/*"
   end
   
   s.subspec 'cocos3d' do |co|
-    co.source_files = "cocos3d/**/*"
+    co.source_files = "cocos3d/cocos3d/**/*"
   end
   
   s.subspec 'deprecated' do |de|
-    de.source_files = "deprecated/**/*"
+    de.source_files = "cocos3d/deprecated/**/*"
   end
 
 end
