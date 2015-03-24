@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "cocos3d/**/*"
+  # s.source_files  = "cocos3d/**/*"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -132,5 +132,25 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  
+  s.subspec 'cc3CAL' do |ss|
+    ss.ios.source_files = "cc3CAL/**/*"
+  end
+  
+  s.subspec 'cc3Extras' do |ss|
+    ss.ios.source_files = "cc3Extras/**/*"
+  end
+  
+  s.subspec 'cc3PVR' do |ss|
+    ss.ios.source_files = "cc3PVR/**/*"
+  end
+  
+  s.subspec 'cocos3d' do |ss|
+    ss.ios.source_files = "cocos3d/**/*"
+  end
+  
+  s.subspec 'deprecated' do |ss|
+    ss.ios.source_files = "deprecated/**/*"
+  end
 
 end
