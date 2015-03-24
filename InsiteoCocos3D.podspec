@@ -88,6 +88,9 @@ Pod::Spec.new do |s|
   #  files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
+  
+  # Preserve the layout of headers in the Code directory
+  s.header_mappings_dir = "cocos3d"
 
   # s.source_files  = "cocos3d/**/*"
   # s.exclude_files = "Classes/Exclude"
